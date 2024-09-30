@@ -1,0 +1,106 @@
+body{
+    background-image: url(../images/imagem-de-fundo.jpg);
+    background-repeat: repeat-x;
+    background-size: contain;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    width: 800px;
+    height: 402px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 12px 50px;
+}
+
+.duvida{
+    color: #FFFFFF;
+    width: 50%;
+    width: 300px;
+    height: 111px;
+    margin-right: 60px;
+}
+
+.duvida h1{
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 11px;
+}
+
+.formulario{
+    background-color: #FFFFFF;
+    width: 340px;
+    height: 378px;
+    border: 1px #000000;
+    padding: 20px 21px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario input, textarea{
+    height: 35px;
+    margin-bottom: 15px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 8px;
+    font-weight: 700;
+    color: #A8A8A8;
+    appearance: -moz-appearance textfield;
+    outline: none;
+}
+
+.formulario #telefone::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+.formulario #mensagem{
+    height: 100px;
+    margin-bottom: 7px;
+}
+
+.formulario .descritivo-asterisco{
+    margin-left: -5px;
+}
+
+.formulario #enviar{
+    background: #3CCC87;
+    color: #FFFFFF;
+    height: 41px;
+    border: none;
+    border-radius: 5px;
+    margin: 20px 0 0 0;
+    width: 300px;
+    cursor: pointer;
+}
+
+.formulario input.ativo, .formulario #mensagem.ativo{
+    margin-bottom: 0;
+    border: 1px solid #F52E2E;
+}
+
+.formulario .campo-nao-preenchido{
+    color: #F52E2E;
+    font-size: 9px;
+    margin-bottom: 6px;
+    display: none;
+}
+
+.formulario .campo-nao-preenchido.ativo{
+    display: block;
+}
+
+.formulario .campo.campo-preenchido{
+    border: 1px solid #00C22B;
+    color: #000000;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.formulario .campo.letra{
+    color: #000000;
+    font-weight: 400;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quest HTML + CSS + JS Intermediário - Formulário com validação</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+
+
+</head>
+
+<body>
+    <main>
+        <div class="duvida">
+            <h1>FICOU COM DÚVIDA?<br>
+                NOS MANDE UMA MENSAGEM!
+            </h1>
+            <p>Caso tenha ficado com qualquer dúvida, basta nos mandar uma mensagem e entraremos em contato em menos de
+                24h.
+            </p>
+        </div>
+
+        <form class="formulario" method="get" action="#">
+            <input class="campo" type="text" name="nome" placeholder="Nome completo *" id="nome" >
+            <p class="campo-nao-preenchido">campo obrigatório</p>
+
+            <input class="campo" type="text" name="email" placeholder="E-mail *" id="email">
+            <p class="campo-nao-preenchido">campo obrigatório</p>
+
+            <input class="campo" type="number" name="telefone" placeholder="Telefone *" id="telefone">
+            <p class="campo-nao-preenchido">campo obrigatório</p>
+
+            <textarea class="campo" name="mensagem" id="mensagem" placeholder="Mensagem *"></textarea>
+            <p class="campo-nao-preenchido">campo obrigatório</p>
+
+            <p class="descritivo-asterisco">*campos obrigatórios</p>
+            <button id="enviar">Enviar</button>
+        </form>
+    </main>
+
+    <script type="text/javascript" src="./src/js/index.js"></script>
+</body>
+
+</html>
